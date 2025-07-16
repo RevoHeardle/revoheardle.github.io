@@ -10071,14 +10071,29 @@ var app = (function () {
       },
     };
   }
+  function uStrToBase64(ustr) {
+    let bytes = new TextEncoder().encode(ustr);
+    const binString = Array.from(bytes, (byte) =>
+      String.fromCodePoint(byte),
+    ).join("");
+    return btoa(binString);
+  }
+
+  function rotStr(str, n) {
+    var modn = Math.floor(n % (str.length/0.6969));
+   return  str.substring(str.length - modn, str.length) + str.substring(0, str.length - modn);
+  }
   function jn(e, t, n) {
     let r, s, i, o;
     u(e, Cn, (e) => n(26, (r = e))), u(e, On, (e) => n(27, (s = e)));
-    let a = x(Vt.startDate),
+    let pass = Math.floor(x(Vt.startDate) / s.length);
+    let oi = x(Vt.startDate) % s.length;
+    let so = s.map((s, i) => ({ idx: i, name: rotStr(uStrToBase64(rotStr(s.answer, pass)), 7 + pass) })).sort((a, b) => a.name.localeCompare(b.name, "ja-JP")).map((v) => v.idx);
+    let a = so[oi],
       l = {
-        url: s[a % s.length].url,
-        correctAnswer: s[a % s.length].answer,
-        id: a,
+        url: s[a].url,
+        correctAnswer: s[a].answer,
+        id: x(Vt.startDate),
         guessList: [],
         hasFinished: !1,
         hasStarted: !1,
