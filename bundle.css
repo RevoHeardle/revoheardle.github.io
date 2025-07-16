@@ -1,9 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Noto+Serif+Display:wght@600&display=swap");
-@font-face {
-  font-family: 'Namuko';
-  src: url('https://cdn.glitch.global/50ca50e9-8dc5-4095-8027-1ba47ba239b4/NamukoSans.ttf') 
- 
-}
 *,
 ::before,
 ::after {

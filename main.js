@@ -466,7 +466,7 @@ var app = (function () {
         [
           {
             type: "script",
-            url: `//www.googletagmanager.com/gtag/js?id=${r[0]}`,
+            url: "",
           },
         ],
         de,
@@ -3638,7 +3638,7 @@ var app = (function () {
       c() {
         (n = w("div")),
           (n.innerHTML =
-            '<p class="mb-3">A clone of <a href="https://www.heardle.app/" title="Heardle">Heardle</a>, and <a href="https://heardle-kpop.glitch.me/" title="Heardle">K-Pop Heardle</a> but for Revo songs.</p> \n\n<p class="mb-3">Each Revo Heardle is randomly chosen from Revo\'s discography. All copyright goes to Revo.</p> \n\n<p class="mb-3">Songs included currently are only from Sound Horizon albums and singles.</p> Thanks for playing!</p> \n\n\n\n<p class="text-xs mb-3 text-custom-line">Prepared with <a href="https://developers.soundcloud.com">Soundcloud</a>,\n    <a href="https://svelte.dev">Svelte</a>,\n    <a href="https://tailwindcss.com">Tailwind</a>,\n    <a href="https://www.deviantart.com/mayugaph/art/Namuko-Sans-THE-iDOLMASTER-logo-font-v1-1-807007459?ga_submit_new=10%3A1564031122">Namuko Sans</a>, <a href="https://fonts.google.com/noto/specimen/Noto+Sans">Noto Sans</a>,\n    <a href="https://iconsvg.xyz">IconSVG</a>, <a href="https://momentjs.com">momentjs</a>,\n    <a href="https://tarekraafat.github.io/autoComplete.js/#/">autocomplete.js</a>, and powered by <a href="https://glitch.com/">Glitch</a>.         <a href="https://omakase.studio" title="Studio Omakase">Served omakase / お任せ</a>. Revo version made by pp88.</p>'),          M(n, "class", "text");
+            '<p class="mb-3">A clone of <a href="https://www.heardle.app/" title="Heardle">Heardle</a>, but for Revo songs.</p> \n\n<p class="mb-3">Each Revo Heardle is randomly chosen from Revo\'s discography. All copyright goes to Revo.</p> \n\n<p class="mb-3">Songs included currently are only from Sound Horizon albums and singles.</p> Thanks for playing!</p> \n\n\n\n<p class="text-xs mb-3 text-custom-line">Prepared with <a href="https://developers.soundcloud.com">Soundcloud</a>,\n    <a href="https://svelte.dev">Svelte</a>,\n    <a href="https://tailwindcss.com">Tailwind</a>,\n    <a href="https://www.deviantart.com/mayugaph/art/Namuko-Sans-THE-iDOLMASTER-logo-font-v1-1-807007459?ga_submit_new=10%3A1564031122">Namuko Sans</a>, <a href="https://fonts.google.com/noto/specimen/Noto+Sans">Noto Sans</a>,\n    <a href="https://iconsvg.xyz">IconSVG</a>, <a href="https://momentjs.com">momentjs</a>,\n    <a href="https://tarekraafat.github.io/autoComplete.js/#/">autocomplete.js</a>.         <a href="https://omakase.studio" title="Studio Omakase">Served omakase / お任せ</a>. Revo version made by pp88.</p>'),          M(n, "class", "text");
       },
       m(e, t) {
         g(e, n, t);
@@ -3663,14 +3663,14 @@ var app = (function () {
         (n = w("div")),
           (r = w("a")),
           (r.innerHTML =
-            '<span class="kofitext svelte-1d3p4dy"><img src="https://storage.ko-fi.com/cdn/cup-border.png" alt="Ko-fi donations" class="kofiimg mr-2 mb-1 svelte-1d3p4dy"/>Support the Heardle devs on Ko-Fi</span><svg xmlns="http://www.w3.org/2000/svg" class="ml-2" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h13M12 5l7 7-7 7"></path></svg>'),
+            ''),
           M(
             r,
             "class",
-            "kofi-button py-2 px-3 rounded-lg items-center flex  svelte-1d3p4dy"
+            "py-2 px-3 rounded-lg items-center flex  svelte-1d3p4dy"
           ),
-          M(r, "href", "https://ko-fi.com/heardle"),
-          M(r, "title", "Support the Heardle devs on Ko-Fi"),
+          M(r, "href", ""),
+          M(r, "title", ""),
           M(
             n,
             "class",
@@ -3825,7 +3825,7 @@ var app = (function () {
       P(async function () {
         (async function () {
           const e = await fetch(
-            "https://imas-heardle.glitch.me/supporters.json"
+            ""
           ); 
           return await e.json();
         })().then((e) => {
