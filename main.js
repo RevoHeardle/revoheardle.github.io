@@ -712,7 +712,7 @@ var app = (function () {
             Q(a.$$.fragment),
             (l = x()),
             (u = w("h1")),
-            (u.textContent = "Revo Heardle"), //big text title
+            (u.textContent = "Revo Heardle Reloaded"), //big text title
             (c = x()),
             (d = w("div")),
             Q(h.$$.fragment),
@@ -3903,7 +3903,7 @@ var app = (function () {
       attemptInterval: 1e3, // interval or time per skip LASTS A WEEK
       attemptIntervalAlt: [1e3, 2e3, 3e3, 4e3, 5e3, 6e3], // after a week
       maxAttempts: 6,
-      startDate: "2022-05-08",
+      startDate: "2025-07-16",
     },
     Jt = [
       "Zannen datta ne...", // FAILED
