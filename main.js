@@ -10153,8 +10153,8 @@ var app = (function () {
         n(10, (k.hasFrame = r), k);
     }
     function x(e) {
-      var t = Yn(e, "YYYY-MM-DD");
-      return Yn().diff(t, "days");
+      var t = Yn.utc(e, "YYYY-MM-DD");
+      return Yn.utc().diff(t, "days");
     }
     null == localStorage.getItem("firstTime") &&
       (_("help", "how to play"), localStorage.setItem("firstTime", "false"));
