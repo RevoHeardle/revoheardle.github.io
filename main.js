@@ -3937,9 +3937,9 @@ var app = (function () {
     let r = "",
       s = new Date(),
       i =
-        3600 * (23 - s.getHours()) +
-        60 * (59 - s.getMinutes()) +
-        (59 - s.getSeconds());
+        3600 * (23 - s.getUTCHours()) +
+        60 * (59 - s.getUTCMinutes()) +
+        (59 - s.getUTCSeconds());
     function o() {
       let e = Math.floor(i / 3600),
         t = Math.floor((i - 3600 * e) / 60),
